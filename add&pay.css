@@ -1,0 +1,146 @@
+
+        body{
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #address-form{
+            width: 450px;
+            margin: auto;
+            background-color: white;
+            color: black;
+        }
+        #header{
+            padding: 10px 17px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 13px;
+            border-bottom: 1px solid rgb(179, 179, 179);
+        }
+
+        #cross{
+            padding-right: 20px;
+            font-size: 30px;
+            font-weight: normal;
+            color: gray;
+        }
+
+        #head-text{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #body{
+            padding: 10px 20px;
+        }
+
+        .type1{
+            width: 400px;
+            border: none;
+            border-bottom: 1px solid rgb(179, 179, 179) ;
+            font-size: 18px;
+        }
+
+        .type2{
+            width: 195px;
+            border: none;
+            border-bottom: 1px solid rgb(179, 179, 179) ;
+            font-size: 18px;
+        }
+
+        .type3{
+            width: 400px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            border-radius: 7px;
+            height: 60px;
+            font-size: 18px;
+            margin: 20px 0px 10px;
+        }
+
+        th,
+        td {
+            width: 200px;
+        }
+        th{
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        #loc{
+            color: rgb(35, 190, 190);
+        }
+
+        .must{
+            color: red;
+        }
+        #nav{
+            background-color: white;
+            margin-bottom: 15px;
+            height: 80px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #logo{
+            width: 200px;
+            padding-left: 200px;
+            margin-top: 15px;
+        }
+        #nxt{
+            width: 500px;
+            padding-left: 116px;
+        }
+
+
+        /* grid-view */
+
+        #cont{
+            width: 1220px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(3, 400px);
+            grid-template-rows: 150px 240px 70px 70px;
+            grid-template-areas: "a a b"
+                                 "a a c"
+                                 "a a d"
+                                 "a a .";
+            gap: 10px;
+        }
+
+        #a{
+            grid-area: a;
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #b{
+            grid-area: b;
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 3px;
+        }
+        #c{
+            grid-area: c;
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 3px;
+        }
+        #d{
+            grid-area: d;
+            background-color: white;
+            
+        }
+
+        #pay-head{
+            padding: 30px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 1px solid gray;
+        }
+        
