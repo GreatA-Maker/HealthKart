@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),   url("https://static1.hkrtcdn.com/hknext/static/media/common/login/popUpDesktop.webp");
+           background-size: cover;
+           box-sizing: border-box;
+           font-family: Roboto,sans-serif;
+           height: 900px;
+ 
+       
+        }
+       .cont{
+           width: 60%;
+          
+           margin:auto;
+           margin-top: 5%;
+           border: 1px solid black;
+           display: flex;
+         
+       }
+       .img1{
+           width: 50%;
+           background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),    url("https://pro2-bar-s3-cdn-cf3.myportfolio.com/eea16061-59a8-442a-9b65-0c684f52f904/4e56fc0b-28d1-4bd4-98c6-697e5a8e4721_rw_1200.gif?h=6a174944815d1cb06954685238d16830");
+           background-size:400px 580px;
+           color: white;
+           font-weight: bolder;
+           padding-left: 5%;
+           padding-top: 1%;
+        
+           
+           
+       }
+       h4{
+           font-size: 23px;
+       }
+       .sub{
+           width: 60%;
+           background-color: rgb(255,255,255);
+           
+           padding-left:26px;
+       }
+       span{
+           margin-left: 10px;
+           font-size: 20px;
+       }
+       .img2{
+           margin-bottom: 20px;
+       }
+       .img2 img{
+           width: 5%;
+       }
+       .head1{
+           display: flex;
+          
+           font-family: Roboto,sans-serif;
+           font-size: 16px;
+           cursor: pointer;
+           color: rgb(102,102,112);
+        
+           
+           
+       }
+       .login{
+           margin-left: 10%;
+           margin-right: 20%;
+           
+       }
+       .bord{
+           width: 90%;
+           border-bottom: 4px solid rgba(0,0,0,0.1);
+           height: 10px;
+           margin: auto;
+           margin-top: -10px;
+
+        
+       }
+       .login:hover{
+           color: rgb(0,174,174);
+           text-decoration: underline;
+       }
+       .signup:hover{
+           color: rgb(0,174,174);
+           text-decoration: underline;
+       }
+       .bord:hover{
+           border-color: rgb(0,174,174);
+       }
+       .mobile{
+           font-size: 15px;
+           margin-left: 6%;
+           font-family: Roboto,sans-serif;
+       }
+       .head2{
+           margin-top: 20px;
+       }
+       .mobile_value{
+           width: 80%;
+           margin-left: 6%;
+           height: 40px;
+           border-radius: 7px solid rgba(0,0,0,0.1);
+       }
+       .mobile_value:placeholder-shown{
+           padding-left: 10px;
+           font-family: Roboto,sans-serif;
+           font-size: 15px;
+           color: white;
+       }
+       .btn{
+           margin-top: 20px;
+           margin-left: 6%;
+           width: 84%;
+           height: 40px;
+           background-color: rgb(0,174,174);
+           color: white;
+           font-size: 17px;
+           border-radius: 4px;
+           border: none;
+           cursor: pointer;
+       
+        }
+        h5{
+            margin: none;
+            margin-left: 10%;
+            margin-top: 8px;
+            color: rgb(102,102,102);
+            font-family: Roboto,sans-serif;
+        }
+       .bord1{
+           width: 80%;
+           display: flex;
+           margin-left: 6%;
+           
+       }
+       .line1{
+           width: 45%;
+           border-bottom: 2px solid rgba(0,0,0,0.1);
+           height: 5px;
+       }
+       .line2{
+           width: 45%;
+           border-bottom: 2px solid rgba(0,0,0,0.1);
+           height: 5px;
+       }
+       h6{
+           margin-left: 10px;
+           margin-right: 10px;
+           margin-top: -2px;
+       }
+       .google{
+           width: 27%;
+           height: 50px;
+           border: 1px solid rgba(0,0,0,0.1);
+           margin-left: 35%;
+           
+           display: flex;
+           cursor: pointer;
+       }
+       .google img{
+           width: 15%;
+           
+           padding-left: 10px;
+       }
+       .goo{
+          font-size: 14px;
+          margin-left: 15%;
+          margin-top: 10px;
+        font-family: Roboto,sans-serif;
+        color: rgb(102,102,102);
+        
+       }
+       .bord2{
+           margin-top: 16%;
+           margin-left: -10px;
+           width: 100%;
+           border-bottom: 2px solid rgba(0,0,0,0.1);
+           height: 5px;
+
+       }
+       .foot{
+           font-size: 12px;
+           margin-top: 10px;
+           margin-left: 15%;
+           margin-bottom: 10%;
+       }
+       a{
+           font-size: 13px;
+           margin-top: 10px;
+           margin-left: 5px;
+       }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="img1">
+            <h4>Why Login?</h4>
+            <div class="img2">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg" ><span>Manage your orders</span>
+
+            </div>
+            <div class="img2">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg" ><span>Get exclusive deals and offers</span>
+
+            </div>
+            <div class="img2">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg" ><span>Personalized Recommendations</span>
+
+            </div>
+             
+             
+        </div>
+        <div class="sub">
+            <div class="head1">
+             <h3 class="login" id="login" >LogIn</h3>
+            <h3 class="signup" id="signup" onclick="redirect_to_signup()">SignUp</h3>
+            </div>
+            <div class="bord"></div>
+            <div class="head2">
+                <h4 class="mobile">Email</h4>
+                <input type="email" placeholder="Enter the email" id="email_value" class="mobile_value">
+                <h4 class="mobile">Password</h4>
+                <input type="password" placeholder="Enter your password" id="password_value" class="mobile_value">
+            </div>
+            <button class="btn" onclick="signin()">Log In</button>
+            <h5>We will send you an OTP to verify your Mobile number</h5>
+            <div class="bord1">
+                <div class="line1"></div>
+                <h6>Or</h6>
+                <div class="line2"></div>
+            </div>
+            <div class="google" id="google">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/common/Logo Google.svg" /><h6 class="goo">Google</h6>
+
+            </div>
+            <div class="bord2"></div>
+            <span class="foot">By logging in you agree to our</span><a href="">Terms & Conditions</a>
+
+            
+            
+        </div>
+        
+    </div>
+        
+
+    </div>
+
+    
+</body>
+</html>
+<script>
+    let log=document.getElementById("login");
+    login.style.color="rgb(0,174,174)";
+    
+     function signin(){
+        var registeruser=JSON.parse(localStorage.getItem("userdata"));
+        console.log(registeruser);
+        var registerusername=document.getElementById("email_value").value;
+        var registerpassword=document.getElementById("password_value").value;
+        let msg=0
+
+        for(let i=0;i<registeruser.length;i++){
+
+           if(registeruser[i].useremail==registerusername && registeruser[i].userpass==registerpassword){
+               msg=1;
+               
+               
+               
+                
+           }
+
+        }
+        if(msg==0){
+            alert("warning email id and password not match");
+
+        }
+        else{
+            window.location.href="product.html"
+        }
+        
+               
+               
+           
+
+          
+           
+
+        }
+
+        function redirect_to_signup(){
+            window.location.href="signup.html"
+        }
+    
+</script>
