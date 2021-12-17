@@ -61,7 +61,7 @@ function navbar(){
                </div>
            </div>
         </div>
-          <div id='cart'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/cart.svg" alt="cart"></div>
+          <div id='cart'><a href="cart.html"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/cart.svg" alt="cart"></a></div>
         </div>
     </div>
 </section>
@@ -72,8 +72,8 @@ function navbar(){
         <div id='bestSells'>Category
         <div id='catogBestSeller'>
             <div id='sellerCat1'>
-                <div id='sNutri'><a href="productViewPage.html">Sport Nutrition</a></div>
-                <div id='hNutri'><a href="productViewPage.html">Health Nutrition</a></div>
+                <div id='sNutri'><a href="login.html">Sport Nutrition</a></div>
+                <div id='hNutri'><a href="login.html">Health Nutrition</a></div>
             </div>
             <div id=sellerCat2>
                 <div id='forSport'>

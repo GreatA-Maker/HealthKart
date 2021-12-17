@@ -2091,7 +2091,7 @@ localStorage.setItem("healthkart_cart", JSON.stringify(array));
 ///// product page /////////
 
 function productPage(){
-    window.location.href = 'productViewPage.html'
+    window.location.href = 'product.html'
 }
 
 /// product page //////////

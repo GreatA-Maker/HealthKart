@@ -181,6 +181,9 @@ button {
     border-radius: 4px;
     color: white;
 }
+#dropTable #sI a{
+    color: white;
+}
 
 #dropTable #lO {
     background: none;
