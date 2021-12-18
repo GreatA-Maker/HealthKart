@@ -6,6 +6,8 @@
             padding: 0;
         }
 
+        /* Address page css */
+
         #address-form{
             width: 450px;
             margin: auto;
@@ -61,6 +63,7 @@
             height: 60px;
             font-size: 18px;
             margin: 20px 0px 10px;
+            cursor: pointer;
         }
 
         th,
@@ -95,8 +98,9 @@
             padding-left: 116px;
         }
 
+        /* Address page css ends */
 
-        /* grid-view */
+        /* grid-view : payment page */
 
         #cont{
             width: 1220px;
@@ -106,7 +110,7 @@
         #grid{
             display: grid;
             grid-template-columns: repeat(3, 400px);
-            grid-template-rows: 150px 240px 70px 70px;
+            grid-template-rows: 150px 245px 70px 70px;
             grid-template-areas: "a a b"
                                  "a a c"
                                  "a a d"
@@ -122,6 +126,7 @@
         #b{
             grid-area: b;
             background-color: white;
+            padding: 20px 20px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 3px;
         }
@@ -133,14 +138,193 @@
         }
         #d{
             grid-area: d;
-            background-color: white;
             
         }
 
         #pay-head{
-            padding: 30px 40px;
+            padding: 25px 40px;
             font-size: 20px;
             font-weight: bold;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid rgb(204, 204, 204);
+        }
+
+        #secure{
+            padding: 10px;
+            color: gray;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .img-icon1{
+            width: 53px;
+        }
+
+        #a-main{
+            display: flex;
+        }
+
+        #left{
+            width: 270px;
+        }
+
+        #right{
+            padding: 25px 50px;
+        }
+
+        .buttons{
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        #checkbox{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .buttons:hover{
+            border-right: 5px solid rgb(0, 211, 211);
+        }
+
+        #img2{
+            margin-top: 20px;
+        }
+
+        .img2{
+            height: 30px;
+            width: 50px;
+        }
+
+        #headd{
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .inner{
+            border: 1px solid rgb(204, 204, 204);
+            height: 40px;
         }
         
+        #in1{
+            width: 290px;
+            padding-left: 10px;
+        }
+
+        #in2{
+            width: 290px;
+            padding-left: 10px;
+        }
+
+        #in3{
+            width: 50px;
+        }
+
+        .sp{
+            margin-top: 15px;
+            margin-right: 10px;
+            padding: 0px 5px;
+        }
+
+        .total-heading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 13px;
+        }
+
+        #change{
+            color: rgb(0, 201, 201);
+            font-weight: bold;
+        }
+
+        #change:hover{
+            color: rgb(116, 116, 116);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #c-head{
+            background-color: rgb(219, 255, 255);
+            padding: 15px 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #inner1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            padding-top: 20px;
+            font-size: 14px;
+        }
+
+        #inner2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        #inner3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-bottom: 1px solid rgb(204, 204, 204);
+        }
+
+        #inner4{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #inner55{
+            padding: 0px 20px;
+            font-size: 12.5px;
+            color: rgb(5, 150, 5);
+        }
+
+        #Free{
+            font-weight: bold;
+        }
+
+        /* grid-view : payment page ends */
+
+        /*  Payment Page */
+
+        #payButton{
+            border: none;
+            color: white;
+            background-color: rgb(221, 94, 55);
+            height: 50px;
+            width: 310px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #image11{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            width: 500px;
+        }
+
+        /* JS- create Elements in payment  */
