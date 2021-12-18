@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/463df39d12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="add&pay.css">
+    <title>Payment</title>
+    
+</head>
+<body>
+    <!-- Top navigation starts -->
+    
+    <div id="nav">
+        <img id="logo" src="data:image/png;base64,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">
+
+        <img id="nxt" src="images/nav1.png">
+    </div>
+    <!-- Top navigation ends -->
+
+    <div id="cont">
+    <div id="grid">
+        <div id="a">
+            <div id="pay-head">Choose Payment Options</div>
+            <div id="a-main">
+                <div id="left">
+                    <button class="buttons" id="db">Debit Card</button>
+                    <button class="buttons">Credit Card</button>
+                    <button class="buttons">Pay using UPI</button>
+                    <button class="buttons">Wallet</button>
+                    <button class="buttons">Internet Banking</button>
+                    <button class="buttons">EMI or Pay Later</button>
+                    <button class="buttons">Cash On Delivery</button>
+                </div>
+                <div id="right">
+                    <div id="headd">Enter Card Details</div> <br>
+                    <input class="inner" id="in1" type="text" placeholder="Card Holder Name"><br>
+                    <input class="inner" id="in2" type="text" placeholder="Card Number"><br>
+                    <select  class="inner sp">
+                        <option value="">Expiry MM</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select  class="inner sp">
+                        <option value="">Expiry YY</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2028</option>
+                    </select>
+                    <input  class="inner sp" id="in3" type="password" placeholder="CVV"><br>
+                    <div id="checkbox">
+                    <input type="checkbox" checked> <div style="font-size: 13px; padding-top: 2px;">&nbsp;&nbsp;Securely saved for faster payments</div><br>
+                    </div>
+                    <div id="img2">
+                    <img class="img2" src="https://img1.hkrtcdn.com/1718/RuPay-Icon.png" alt="">
+                    <img class="img2" src="https://s3-ap-southeast-1.amazonaws.com/hkprod/13831/normal_1383075_o.png" alt="">
+                    <img class="img2" src="https://s3-ap-southeast-1.amazonaws.com/hkprod/13831/normal_1383073_o.png" alt="">
+                    <img class="img2" src="https://s3-ap-southeast-1.amazonaws.com/hkprod/payment_img/card/ic_maestro.png" alt="">
+                    <img class="img2" src="https://s3-ap-southeast-1.amazonaws.com/hkprod/payment_img/card/Maestro_logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="b">
+            <div class="p-total-heading">
+                <div class="total-heading">
+                <div ><i class="fas fa-map-marker-alt"></i></span>&nbsp; Deliver to the Address</div>
+                <div id="change">Change</div>
+                </div>
+                <div id="div12"></div>
+                <div id="div22"></div>
+                <div id="div32"></div>
+            </div>
+        </div>
+        <div id="c">
+                <div id="c-head">Order Summary</div>
+                <div id="inner1">
+                    <div>Total MRP</div>
+                    <div class="bolder" id="oriPrice"></div>
+                </div>
+                <div id="inner2">
+                    <div>Total Discount <span><i class="fas fa-info-circle"></i></span></div>
+                    <div class="bolder"  id="discount"></div>
+                </div>
+                <div id="inner3">
+                    <div>Shipping Charges</div>
+                    <div id="Free">FREE</div>
+                </div>
+                <div id="inner4">
+                    <div>Final Payable</div>
+                    <div class="bolder"  id="curPrice"></div>
+                </div>
+                <div id="inner55">
+                    You will Save & Earn ₹24 HK Cash on this order
+                </div>
+        </div>
+        <div id="d">
+            <div id="secure"><span><i class="fas fa-shield-alt"></i> </span> 100% Safe & Secure Payments</div>
+            <div id="icon1">
+                <img class="img-icon1" src="https://img2.hkrtcdn.com/react/static/media/common/footer/visa-icon.svg">
+                <img class="img-icon1" src="https://img10.hkrtcdn.com/react/static/media/common/footer/mastercard-icon.svg">
+                <img class="img-icon1" src="https://img2.hkrtcdn.com/react/static/media/common/footer/amex-icon.svg" alt="">
+                <img class="img-icon1" src="https://img10.hkrtcdn.com/react/static/media/common/footer/wallet-icon.svg" alt="">
+                <img class="img-icon1" src="https://img10.hkrtcdn.com/react/static/media/common/footer/net-banking-icon.svg" alt="">
+                <img class="img-icon1" src="https://img2.hkrtcdn.com/react/static/media/common/footer/emi-icon.svg" alt="">
+                <img class="img-icon1" src="https://img2.hkrtcdn.com/react/static/media/common/footer/cod-icon.svg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+<script src="hk.js"></script>

@@ -154,6 +154,11 @@ document.querySelector("#finalPay").innerHTML = `₹${finalPay}`;
 document.querySelector("#payButton").innerHTML =
   "Proceed to Pay: " + `  ₹${actual}`;
 
+//   let proceedToPay = document.getElementById('payButton');
+//  proceedToPay.onclick = function(){
+//    window.location.href = "/Address.html";
+//  }
+
 // =================  total Dis  ============
 
 var discount = total - actual;
@@ -188,11 +193,15 @@ function setColor(e, btn, color) {
    target.dataset.count = count === 1 ? 0 : 1;
 }
 
+// For payment part
 
+let prices = {
+  total:total,
+  payable: finalPay,
+  discount:discount
+}
 
-
-
-
+localStorage.setItem("priceAmounts", JSON.stringify(prices));
 
 
 
