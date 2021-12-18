@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/463df39d12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="add&pay.css">
+    <title>Address</title>
+    
+</head>
+<body>
+    <!-- Top navigation starts -->
+    
+    <div id="nav">
+        <img id="logo" src="data:image/png;base64,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">
+
+        <img id="nxt" src="images/nav.png">
+    </div>
+    <!-- Top navigation ends -->
+
+    <div id="address-form">
+        <div id="header">
+            <div id="head-text">Add New Address</div>
+            <div id="cross">&times;</div>
+        </div>
+        <div id="body">
+            <form id="form">
+            <table id="table">
+                <tr>
+                  <th>Name <span class="must">*</span></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="name1" class="type1" type="text" ></td>
+                </tr>
+                <tr>
+                    <th>Mobile No. <span class="must">*</span></th>
+                    <th>Alternate No.</th>
+                </tr>
+                <tr>
+                    <td><input id="mobile1" class="type2" type="text" ></td>
+                    <td><input class="type2" type="text" ></td>
+                </tr>
+                
+                <tr>
+                    <th>Address <span class="must">*</span></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="address1" class="type1" type="text" ></td>
+                </tr>
+                <tr>
+                    <th id="loc"><span><i class="fas fa-map-marker-alt"></i> </span> Get my Location</th>
+                </tr>
+
+                <tr>
+                    <th>Landmark</th>
+                    <th>Pincode <span class="must">*</span></th>
+                </tr>
+                <tr>
+                    <td><input class="type2" type="text" ></td>
+                    <td><input class="type2" type="text" ></td>
+                </tr>
+                <tr>
+                    <th>State <span class="must">*</span></th>
+                    <th>City <span class="must">*</span></th>
+                </tr>
+                <tr>
+                    <td><select class="type2">
+                        <option value="">-Select One-</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select></td>
+                    <td><input class="type2" type="text" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="type3" type="submit" value="Save & Deliver"></td>
+                </tr>
+              </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    // Address page to payment page  -  name and address
+
+
+document.getElementById("form").addEventListener("submit", addItem);
+
+function addItem(e){
+    e.preventDefault();
+    var name = document.getElementById("name1").value;
+    var address = document.getElementById("address1").value;
+    var mobile = document.getElementById("mobile1").value;
+
+    var data = {
+        name:name,
+        address:address,
+        mobile:mobile
+    };
+
+
+    localStorage.setItem("datavalue",JSON.stringify(data));
+
+    window.location.href = "/Payment.html";
+}
+
+document.getElementById('logo').onclick = function(){
+        window.location.href = "/index.html";
+    }
+</script>
