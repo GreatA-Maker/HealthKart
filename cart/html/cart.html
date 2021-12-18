@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart_page</title>
+    <link
+      rel="shortcut icon"
+      sizes="120x110"
+      href="https://tse4.mm.bing.net/th?id=OIP._eSL4r97_Eds2PjI4XD6zQHaEK&pid=Api&P=0&w=291&h=164"
+    />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <!-- <link rel="stylesheet" href="../css/product.css"> -->
+    <style></style>
+  </head>
+
+  <body>
+    <div id="fixMsg" onclick="letsChat()">
+      <img
+        src="https://tse2.mm.bing.net/th?id=OIP.jO9CsucE6dD-40_7pJEHewHaHa&pid=Api&P=0&w=300&h=300"
+        alt=""
+      />
+      <span>Let's Chat</span>
+    </div>
+
+    <div>
+      <!-- =================  toggle_Bar  ================== -->
+      <div id="sideBar">
+        <div class="toggle-btn" onclick="togglemenu()">
+          <span>
+            <img
+              src="https://img8.hkrtcdn.com/react/static/media/cart/cross-black.svg"
+              alt=""
+          /></span>
+        </div>
+
+        <div id="toggleBar">
+          <div id="toggleTop">
+            <h2>Apply Coupon</h2>
+            <input type="text" placeholder="Enter Coupon Code" />
+            <button>Apply</button>
+          </div>
+          <hr />
+          <div id="toggleBottom">
+            <div>
+              <h2>Available Coupons</h2>
+              <div id="giftBox">
+                <div id="giftBoxL">
+                  <img
+                    src="https://tse4.mm.bing.net/th?id=OIP.-wvs0m2VasHMm6fhAfhSpAHaHa&pid=Api&P=0&w=300&h=300"
+                    alt=""
+                  />
+                </div>
+                <div id="giftBoxR">
+                  <p>Masai Discount Coupon</p>
+                  <button id="btncolor" onclick="couponClicked() ;this.style.backgroundColor = '#008B8B';">
+                    Apply Coupon
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div id="giftBox">
+                <div id="giftBoxL">
+                  <img
+                    src="https://tse4.mm.bing.net/th?id=OIP.-wvs0m2VasHMm6fhAfhSpAHaHa&pid=Api&P=0&w=300&h=300"
+                    alt=""
+                  />
+                </div>
+                <div id="giftBoxR">
+                  <p>Masai Discount Coupon</p>
+                  <button onclick="couponClicked();this.style.backgroundColor = '#008B8B';">Apply Coupon</button>
+                </div>
+              </div>
+              <hr />
+              <div id="giftBox">
+                <div id="giftBoxL">
+                  <img
+                    src="https://tse4.mm.bing.net/th?id=OIP.-wvs0m2VasHMm6fhAfhSpAHaHa&pid=Api&P=0&w=300&h=300"
+                    alt=""
+                  />
+                </div>
+                <div id="giftBoxR">
+                  <p>Masai Discount Coupon</p>
+                  <button
+                    onclick="couponClicked() ;this.style.backgroundColor = '#008B8B'; "
+                  >
+                    Apply Coupon
+                  </button>
+                  <!-- <input
+                    type="button"
+                    value="Click Me"
+                    onclick="this.style.backgroundColor = '#DC143C'; this.style.color = '#FF00FF';"
+                  /> -->
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================  nav Bar ======================= -->
+      <div id="fullDivNav">
+        <!-- <div id="logo " ></div> -->
+        <div id="navbar">
+          <!-- <div id="logo1"></div> -->
+          <!-- <div id="mainlogo " >
+            
+            
+            <img
+              src="https://affiliate.cubber.in/images/partner_logo/health_kart.jpg"
+              alt=""
+            /> 
+          </div> -->
+          <div id="check">
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/blue-tick.svg"
+              alt=""
+            />
+            <span class="checkname">CART</span>
+            <!-- <hr class="line" /> -->
+            <div class="line"></div>
+
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/outline-tick.svg"
+              alt=""
+            />
+            <span class="checkname">ADDRESS</span>
+            <!-- <hr class="line" /> -->
+            <div class="line"></div>
+
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/outline-tick.svg"
+              alt=""
+            />
+            <span class="checkname">PAYMENT</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- ======  Left side  Display Cart Item=========== -->
+
+        <div id="left">
+          <div id="cartCount"></div>
+          <hr class="white" />
+          <div id="displayItem"></div>
+
+          <a href="">Continue Shopping</a>
+        </div>
+
+        <!-- ================  right side ============= -->
+        <div id="right">
+          <div id="pinbox">
+            <img
+              src="https://img2.hkrtcdn.com/react/static/media/common/location-grey.svg"
+              alt=""
+            />
+            <input type="text" placeholder="Enter Pin Code" />
+            <button>Check</button>
+          </div>
+          <br />
+
+          <div id="couponBox" onclick="togglemenu()">
+            <img
+              src="https://img10.hkrtcdn.com/react/static/media/cart/discount.png"
+              alt=""
+            />
+            <div>Apply Coupon</div>
+            <img
+              src="https://img8.hkrtcdn.com/react/static/media/cart/arrow-right.svg"
+              alt=""
+            />
+          </div>
+          <br />
+          <!-- ===================xxxxxxxxxxxxxxxx=================== -->
+          <div id="afterApplyCoupon"><p>Coupon Not Apply</p></div>
+          <br />
+
+          <!-- ============== pay btn ============ -->
+
+          <a href=""><button id="payButton">Proceed to Pay</button></a>
+          <br />
+          <br />
+
+          <!-- =============== order summery =========== -->
+          <div id="orderSummaryBox">
+            <div id="orderSummary">
+              <h3 class="orderS">Order Summary</h3>
+
+              <div class="OSflx">
+                <div><h4>Total MRP:</h4></div>
+                <h3 id="totalMRP"></h3>
+              </div>
+
+              <div class="OSflx">
+                <div><h4>Total Discount:</h4></div>
+                <h3 class="red" id="tatalDis">₹__</h3>
+              </div>
+
+              <div class="OSflx">
+                <div>
+                  <h4>Loyalty Savings:</h4>
+                  <p class="green green1">Save extra ₹39</p>
+                </div>
+                <h3 class="blue">Become a member</h3>
+              </div>
+
+              <div class="OSflx">
+                <div><h4>Shipping Charges :</h4></div>
+                <h3>FREE</h3>
+              </div>
+            </div>
+            <hr id="rhr" />
+
+            <div id="finalPayable">
+              <div class="FPflx">
+                <h3>Final Payable:</h3>
+                <h2 id="finalPay">₹___</h2>
+              </div>
+              <p class="green">
+                You will Save ₹550 & Earn ₹27 HK Cash on this order
+              </p>
+            </div>
+
+            <div class="ads">
+              <p>Copyright © 2021, HealthKart.com, or its affiliates</p>
+            </div>
+
+            <div id="login_signup">
+              <div id="login_signup_inbox">
+                <img
+                  src="https://img10.hkrtcdn.com/react/static/media/cart/devices.svg"
+                  alt=""
+                />
+                <div>
+                  <div>Save your cart & access it across any device</div>
+                  <div class="LS">
+                    <span>Login</span><span>|</span><span>Signup</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <div id="letsChat" onclick="letsChat()">
+      <div id="chattingInbox">
+        <div id="hed">
+          <img
+            src="https://1.bp.blogspot.com/-61vzPuJ072o/X4j1k8d2xkI/AAAAAAAAUP0/ajbenJc7hwcuLVgrZTvI-BR8251kSPZdACLcBGAsYHQ/s16000/%25D8%25A7%25D9%258A%25D9%2582%25D9%2588%25D9%2586%25D8%25A9%2B%25D9%2585%25D8%25B3%25D9%2586%25D8%25AC%25D8%25B1%2B%25D9%2581%25D9%258A%25D8%25B3%2B%25D8%25A8%25D9%2588%25D9%2583%2B%25D8%25A7%25D9%2584%25D8%25AC%25D8%25AF%25D9%258A%25D8%25AF%25D8%25A9.png"
+            alt=""
+          />
+          <h2>messenger</h2>
+        </div>
+        <textarea name="" id="textarea" cols="35" rows="5">
+◕‿◕ °･ﾟ   𝐻𝑒𝓎 𝒫𝒾𝓎𝓊𝓈𝒽   ﾟ･° </textarea
+        >
+        <div id="txt">
+          <input type="text" placeholder="Text here" />
+          <img
+            src="https://maxcdn.icons8.com/Share/icon/Messaging/sent1600.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="logo"></div>
+  </body>
+
+  <script src="../js/cart.js"></script>
+
+  <script type="module">
+    import logo from "../js/logo.js";
+
+    document.querySelector("#logo").innerHTML = logo();
+  </script>
+</html>
+<!-- ======================================================== -->

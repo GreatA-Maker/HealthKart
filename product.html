@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+#navCont {
+    display: flex;
+    margin: auto;
+    width: 1170px;
+    height: 87.5px;
+}
+
+#logo {
+    width: 197px;
+    height: 49px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+#search {
+    width: 360px;
+    border: none;
+    margin-left: 10px;
+    background-color: #f7f7f7;
+}
+
+.glass {
+    margin-left: 10px;
+    width: 20px;
+}
+
+#searchCont {
+    display: flex;
+    border: 1px solid gray;
+    height: 37px;
+    margin-top: 24px;
+    border-radius: 3px;
+    margin-left: 2.5%;
+    background-color: #f7f7f7;
+}
+
+#headCart {
+    display: flex;
+    padding-left: 5px;
+    width: auto;
+    align-items: center;
+    font-size: 14px;
+}
+
+#headCart>div {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.ima {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+#cart {
+    width: 28px;
+}
+
+#belowNav {
+    margin: auto;
+    display: flex;
+    width: 1170px;
+    height: 51.3px;
+}
+
+#catag {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    width: 798.3px;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+#catag>div {
+    cursor: pointer;
+}
+
+#catag>div:hover {
+    color: #007aff;
+}
+
+#cataglast {
+    margin-right: 60px;
+}
+
+#navCont>div>div:hover {
+    color: #007aff;
+}
+
+#store {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    width: 224px;
+    font-weight: 600;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 32px;
+}
+
+#store>div {
+    padding: 5px;
+    background: #e3e3e3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#myDIV {
+    display: none;
+}
+
+#myDIV {
+    background: #fff;
+    border: 1px solid transparent;
+    font-size: 12px;
+    text-align: left;
+    width: 160px;
+    margin-top: 10px;
+}
+
+#myDIV p {
+    padding: 10px;
+    font-weight: lighter;
+}
+
+#myDIV>p:hover {
+    color: #007aff;
+}
+
+#myDIV h1 {
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.ic img {
+    width: 18px;
+}
+
+#accounts {
+    position: relative;
+}
+
+#dropTable {
+    display: none;
+}
+
+#dropTable {
+    right: 0;
+    width: 323px;
+    color: black;
+    text-align: center;
+    background-color: #fff;
+}
+
+#dropTable #sI, #lO {
+    margin: auto;
+    width: 296px;
+    height: 50px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    line-height: 55px;
+    background: cadetblue;
+    border-radius: 4px;
+    color: white;
+}
+
+#dropTable #lO {
+    background: none;
+    color: black;
+    border: 1px solid black;
+}
+
+#insideDrop {
+    width: 296px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 13px;
+    grid-gap: 0;
+}
+
+#f1, #f2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+#f1>div:nth-child(1) {
+    color: #009393;
+}
+
+#f2>div:nth-child(1) {
+    color: #009393;
+}
+
+#f1>div:hover {
+    color: #007aff;
+}
+
+#f2>div:hover {
+    color: #007aff;
+}
+
+#catogBestSeller {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+}
+
+#catogBestSeller {
+    display: none;
+}
+
+#sellerCat1 {
+    background: #f6f6f7;
+}
+
+#sellerCat1>div {
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+#forSport, #forhealth {
+    background-color: lightcyan;
+    padding: 20px;
+    line-height: 30px;
+}
+
+#sNutri:hover {
+    background-color: white;
+}
+
+#hNutri:hover {
+    background-color: white;
+}
+
+#gend-DroDwn {
+    display: none;
+}
+
+#gend-DroDwn {
+    width: 265px;
+    height: 176px;
+    position: absolute;
+    background-color: #fff;
+}
+
+#gen_content {
+    width: 219px;
+    height: 145px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.gender_text {
+    color: #1d1d1d;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#cat_menWomen {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 20px;
+}
+
+#cat_menWomen>div {
+    width: 100px;
+    height: 107px;
+    border: 0.5px solid gray;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+#div_cat_Men:hover {
+    border: 1px solid blue;
+    color: blueviolet;
+}
+
+#div_cat_Women:hover {
+    border: 1px solid blue;
+    color: blueviolet;
+}
+
+#hk {
+    background-color: #d8faf9 !important;
+    margin-right: 15px;
+}
+
+#hk:hover {
+    background-color: rgb(60, 187, 238) !important;
+}
+.maincont{
+    background-color: rgb(248,248,248);
+    width: 100%;
+    
+    margin-top: 0px;
+}
+.mainbody{
+    display: flex;
+    margin-left: 8%;
+  
+    
+
+}
+.mainbody p{
+    margin-right: 8px;
+    color: rgb(146,175,210);
+    font-family: sans-serif;
+    margin-top: 2%;
+}
+.mainbar{
+    display: flex;
+}
+.leftbar{
+    width: 30%;
+    height: 2000px;
+   
+}
+.rightbar{
+    width: 70%;
+    height: 1000px;
+  
+}
+.leftbar h2{
+    margin-left: 35%;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+
+#display{
+           
+           width: 100%;
+           
+           height: 1700px;
+           margin: auto;
+           display: grid;
+           grid-template-columns: 30% 30% 30% ;
+           grid-gap: 20px;
+           justify-content: center;
+           margin-top: 10%;
+           background-color: rgb(248,248,248);
+           
+       
+
+       }
+       #display div{
+           
+           padding: 20px;
+           margin:10px;
+       }
+       
+       #display img{
+           width: 100%;
+       }
+       #display p{
+           font-family: "Trade Gothic W01 Bold_2", Helvetica, Arial, sans-serif;
+           align-items: center;
+           font-size: 17px;
+           padding-left: 15px;
+       }
+       #display button{
+           background-color: black;
+           color: white;
+           align-items: center;
+           width: 80%;
+           height: 40px;
+           font-family: "Trade Gothic W01 Bold_2", Helvetica, Arial, sans-serif;
+           margin-top: 10%;
+           
+       }
+       .cont2-1{
+        width: 60%;
+        display: inline-block;
+      
+        height: 100px;
+        padding-left: 120px;
+       
+        display: flex;
+        font-family: "Trade Gothic W01 Bold_2", Helvetica, Arial, sans-serif;
+      
+       }
+       .cont2-1 div{
+           
+           height: 20px;
+           margin-left: 70%
+           
+          
+       }
+       .cont2-1 div select{
+         width: 120px;
+         height: 30px;
+         border-radius: 3px;
+       }
+       .cont2-1{
+        width: 60%;
+        display: inline-block;
+      
+        height: 100px;
+        padding-left: 120px;
+       
+        display: flex;
+        font-family: "Trade Gothic W01 Bold_2", Helvetica, Arial, sans-serif;
+        color: blue;
+      
+       }
+       .cont2-1 div{
+           
+           height: 20px;
+           margin-left: 70%
+           
+          
+       }
+       .cont2-1 div select{
+         width: 120px;
+         height: 30px;
+         border-radius: 3px;
+       }
+       .offers{
+    background-color:rgb(255,255,255);
+    margin-left: 25%;
+  
+    width: 50%;
+    margin-top: 40px;
+ 
+}
+.offers .offer{
+    margin-left: 10%;
+    font-size: 18px; 
+    
+}
+.offers .clear{
+    margin-left: 30%;
+    font-size: 18px;
+    
+   
+}
+.inputt{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 10%;
+    
+    
+    
+}
+.inputt span{
+    margin-left: 10%;
+}
+
+  
+
+
+
+</style>
+<body>
+    <section>
+        <div id='navCont'>
+            <div id='logo'><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
+                a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 179.3 43.7"
+                enable-background="new 0 0 179.3 43.7" space="preserve">
+                <polygon fill="#00BFBF" points="10.7,13.3 10.7,20.4 3,20.4 3,13.3 0,13.3 0,30.4 3,30.4 3,22.8 10.7,22.8 10.7,30.4 13.6,30.4
+                13.6,13.3 "></polygon>
+                <polygon fill="#00BFBF" points="30.7,22.8 22.5,22.8 22.5,28 30.7,28 30.7,30.4 19.5,30.4 19.5,13.3 30.7,13.3 30.7,15.7 22.5,15.7
+                22.5,20.4 30.7,20.4 "></polygon>
+                <path fill="#00BFBF"
+                    d="M45.6,26.4H39l-1.4,4h-3.1L41,13.3h2.7l6.5,17.2H47L45.6,26.4z M39.8,24h5l-2.5-7.1L39.8,24z">
+                </path>
+                <polygon fill="#00BFBF" points="56.2,28 64,28 64,30.4 53.2,30.4 53.2,13.3 56.2,13.3 "></polygon>
+                <polygon fill="#00BFBF"
+                    points="79.2,15.7 73.8,15.7 73.8,30.4 70.9,30.4 70.9,15.7 65.6,15.7 65.6,13.3 79.2,13.3 ">
+                </polygon>
+                <path fill="#00BFBF" d="M98.1,20.4v-7.1h3v17.2h-3v-7.6h-7.7v7.6h-3V13.3h3v7.1H98.1z M110.6,19.3l5-6h3.6l-6.4,7.6l6.7,9.6H116
+                l-5.2-7.4l-1.9,2.1v5.3h-3V13.3h3v8L110.6,19.3z M82.6,42.7h41.7V1H82.6V42.7z"></path>
+                <path fill="#00BFBF"
+                    d="M138.3,26.4h-6.6l-1.4,4h-3.1l6.5-17.2h2.7l6.5,17.2h-3.1L138.3,26.4z M132.5,24h5l-2.5-7.1L132.5,24z">
+                </path>
+                <g>
+                    <path fill="#00BFBF" d="M153.1,23.8h-3.3v6.6h-3V13.3h6c1,0,1.9,0.1,2.6,0.3c0.8,0.2,1.4,0.6,2,1c0.5,0.4,0.9,1,1.2,1.6
+                c0.3,0.6,0.4,1.4,0.4,2.2c0,1.1-0.3,2.1-0.8,2.9c-0.6,0.8-1.3,1.4-2.3,1.8l3.9,7.2v0.2h-3.2L153.1,23.8z M149.8,21.4h3.1
+                c0.5,0,1-0.1,1.4-0.2c0.4-0.1,0.7-0.3,1-0.6c0.3-0.3,0.5-0.5,0.6-0.9c0.1-0.3,0.2-0.7,0.2-1.1c0-0.4-0.1-0.8-0.2-1.2
+                c-0.1-0.4-0.3-0.7-0.6-0.9c-0.3-0.3-0.6-0.5-1-0.6c-0.4-0.1-0.9-0.2-1.5-0.2h-3.1V21.4z"></path>
+                    <polygon fill="#00BFBF"
+                        points="176,15.7 170.7,15.7 170.7,30.4 167.7,30.4 167.7,15.7 162.4,15.7 162.4,13.3 176,13.3 ">
+                    </polygon>
+                </g>
+            </svg></div>
+            <div id="searchCont">
+                <img class="glass" src="https://static1.hkrtcdn.com/hknext/static/media/common/header/search-icon-grey-2.svg">
+                <input id='search' type="text" placeholder="Search for products, brands or Health Goals">
+            </div>
+            <div id='headCart'>
+              <div> Loyal Rewards <span class="ima">&nbsp;|</span></div>
+              <div>Customer Support
+                <span class="ima"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/arrow-down.svg" alt="">&nbsp;|</span>
+             </div>
+              <div id='accounts'>My Account & Orders
+              <span class="ima"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/arrow-down.svg" alt="">&nbsp;|</span>
+               <div id='dropTable'>
+                   <div id='sI'>LogIn</div>
+                   <div id='lO'>New user? / Sign up</div>
+                   <div id='insideDrop'>
+                    <div id='f1'>
+                        <div>My Account</div>
+                        <div><span><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/my-orders.svg" alt="" srcset=""></span>&nbsp; Orders</div>
+                        <div><span><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/my-wishlist.svg" alt="" srcset=""></span>&nbsp; Witch List</div>
+                        <div><span><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/loyalty-rewards.svg" alt="" srcset=""></span>&nbsp; Loyal Rewards</div>
+                    </div>
+                    <div id='f2'>
+                        <div>Health Profile</div>
+                        <div>&nbsp; Diet Plan</div>
+                        <div>&nbsp; My Consultants</div>
+                        <div>&nbsp; Recommended Products</div>
+                    </div>
+                   </div>
+               </div>
+            </div>
+              <div id='cart'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/cart.svg" alt="cart"></div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+         <div id='belowNav'>
+            <div id='catag'>
+            <div id='catagfirst'>Category</div>
+            <div>Brand</div>
+            <div id='genderSec'>Gender
+                <div id='gend-DroDwn'>
+                     <div id='gen_content'>
+                         <div class="gender_text">Shop By Gender</div>
+                         <div id='cat_menWomen'>
+                             <div id='div_cat_Men'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/man-2.svg" alt="" srcset="">
+                                 <div>MEN</div>
+                            </div>
+                             <div id='div_cat_Women'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/woman-2.svg" alt="" srcset="">
+                               <div>WOMEN</div>
+                            </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div>Goal</div>
+            <div id='bestSells'>Bestsellers
+            <div id='catogBestSeller'>
+                <div id='sellerCat1'>
+                    <div id='sNutri'>Sport Nutrition</div>
+                    <div id='hNutri'>Health Nutrition</div>
+                </div>
+                <div id=sellerCat2>
+                    <div id='forSport'>
+                        <div>Protein Powder</div>
+                        <div>Masss Gainer</div>
+                        <div>Whey Protein</div>
+                        <div>Health Booster</div>
+                    </div>
+                    <div id='forhealth'>
+                        <div>Protein A</div>
+                        <div>Mas B</div>
+                        <div>Protein C</div>
+                        <div>Health Booster G</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>Deals</div>
+            <div>Gift Card</div>
+            <div id='cataglast'>Blog,Video & More</div>
+            </div>
+            <div id='store'>
+                <div id='hk'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/hk-consult.svg" alt="" srcset="">
+                    <span id='cons'>&nbsp;HK Consult</span>
+                    <div id='myDIV'>
+                        <h1>Consult Services</h1>
+                        <p><span class="ic"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/consult-health-profile-icon.svg" alt=""></span>&nbsp;&nbsp;Health Profile</p>
+                        <p><span class="ic"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/book-consultation-icon.svg" alt=""></span>&nbsp;&nbsp;Book a Consultation</p>
+                        <p><span class="ic"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/consult-health-profile-icon.svg" alt=""></span>&nbsp;&nbsp;Recommend a Product</p>
+                        <p><span class="ic"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/what-we-offer-icon.svg" alt=""></span>&nbsp;&nbsp;Service Programs</p>
+                        <p><span class="ic"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/consult-health-profile-icon.svg" alt=""></span>&nbsp;&nbsp;Workout at Home</p>
+                     </div>
+                </div>
+                <div id='st_store'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/location-pin.svg" alt="" srcset="">&nbsp;Find a Store
+                </div>
+            </div>
+         </div>
+    </section>
+    <hr>
+    <div class="maincont">
+    <div class="mainbody">
+        <p>Home</p>
+        <p>/</p>
+        <p>Sports Nutrition</p>
+        <p>/</p>
+        <p>Whey Isolate</p>
+
+    </div>
+    <div class="mainbar">
+    <div class="leftbar">
+        <h2>Browse By</h2>
+        <div class="offers">
+            <span class="offer">Offers</span><span class="clear" >Clear</span>
+           <div class="inputt">
+               <input type="radio"><span>Extra 16% off on Healthkart Fish oil 60 capsules</span>
+               
+               
+           </div>
+           <div class="inputt">
+            <input type="radio"><span>Extra 16% off on Healthkart Fish oil 60 capsules</span>
+            
+            
+        </div>
+        <div class="inputt">
+            <input type="radio"><span>Extra 16% off on Healthkart Fish oil 60 capsules</span>
+            
+            
+        </div>
+
+        </div>
+        <h2>By Brands</h2>
+        <div class="offers">
+            <span class="offer">Select by brands</span>
+           <div class="inputt">
+               <input type="radio"><span>HealthKart</span>
+               
+               
+           </div>
+           <div class="inputt">
+            <input type="radio"><span>MuscleBlaze</span>
+            
+            
+        </div>
+        <div class="inputt">
+            <input type="radio"><span>My Protien</span>
+            
+            
+        </div>
+        <div class="inputt">
+            <input type="radio"><span>Nitrotech</span>
+            
+            
+        </div>
+        <div class="inputt">
+            <input type="radio"><span>Protien x</span>
+            
+            
+        </div>
+
+        </div>
+      
+        
+    </div>
+    
+    
+    <div class="rightbar">
+        <div class="cont2-1">
+    
+            <div><label for="">Sort By
+              <select name="" id="filter" onchange="lth()">
+                <option value="high" >high to low</option>
+                <option value="low">low to high</option>
+              </select></label>
+            </div>
+    
+          </div>
+        
+        <div id="display">
+
+        </div>
+        
+        
+        
+    </div>
+    </div>
+    </div>
+     
+ 
+
+
+
+</body>
+</html>
+<script>
+   function onMouseIn(hCons, myDIV){
+    hCons.onmouseover = ()=> 
+    {
+        addDropDwn(myDIV)
+    }
+}
+function onMouserOut(hCons, myDIV){
+   hCons.onmouseleave = ()=> 
+    {
+        removeDropDwn(myDIV)
+    }
+}
+function addDropDwn(x) {
+      
+    if (x.style.display === "none") {
+      x.style.display = "grid";
+      x.style.position ='absolute'
+      x.style.zIndex = '1'
+    }
+  }
+  function removeDropDwn(x){
+      x.style.display = "none";
+     }
+
+ function addDropDwn1(mO,x ,array) {
+        mO.onmouseover =()=> {
+            array.forEach((ele)=>{
+                 ele.style.display = "none"
+          });
+        if (x.style.display === "none") {
+          x.style.display = "grid";
+          x.style.position ='absolute';
+          x.style.backgroundColor = 'white'
+          x.style.zIndex = '1'
+        }
+       }
+      }
+      function getElement(id)
+      {
+          return document.getElementById(id);
+      }
+    
+        function makeArr(array){
+            let arr = []
+            for(let i=0; i< array.length; i++)
+            {
+                arr.push(document.getElementById(array[i]))
+            }
+            return arr;
+        }
+        function makeNavbar(){
+            let hCons = getElement('hk');
+            let myDIV = getElement('myDIV');
+            onMouseIn(hCons,myDIV)
+            onMouserOut(hCons,myDIV)
+        
+          let bestSeller = getElement('bestSells');
+          let catBestSell = getElement('catogBestSeller')
+           onMouseIn(bestSeller,catBestSell)
+           onMouserOut(bestSeller, catBestSell)
+          let sNutri = getElement('sNutri')
+          let hNutri = getElement('hNutri')
+          let ar = makeArr(['forSport','forhealth'])
+          addDropDwn1(sNutri,ar[0],ar)
+          addDropDwn1(hNutri,ar[1],ar)
+          
+          let accounts = getElement('accounts')
+          let dT = getElement('dropTable')
+          onMouseIn(accounts,dT)
+          onMouserOut(accounts,dT)
+
+          //image of man-fmale function
+
+          let genderSec = document.getElementById('genderSec');
+          genderSec.onmouseover = ()=>{
+          let gendDroDwn = document.getElementById('gend-DroDwn')
+          gendDroDwn.style.display = 'grid'
+          gendDroDwn.style.zIndex = '1'
+  }
+        genderSec.onmouseleave = ()=>{
+       let gendDroDwn = document.getElementById('gend-DroDwn')
+       gendDroDwn.style.display = 'none'
+  }
+  
+
+
+  }
+  let parent=document.getElementById("display");
+      
+
+      let data = [
+      {imgPrime:`https://img5.hkrtcdn.com/17017/prd_1701644_o.jpg`,
+      name:`MuscleBlaze High Protein Muesli, 1 kg, Dark Chocolate & Cranberry`,
+      oriPrice: 825,
+      curPrice: 745,
+      quantity: 1,
+      imgSub1:`https://img3.hkrtcdn.com/17017/prd_1701652-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-French-Vanilla-Crme_o.jpg`,
+      imgSub2:`https://img5.hkrtcdn.com/17017/prd_1701654-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-French-Vanilla-Crme_o.jpg`,
+      imgSub3:`https://img7.hkrtcdn.com/17017/prd_1701656-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-French-Vanilla-Crme_o.jpg`
+      },
+  
+      {imgPrime:`https://img5.hkrtcdn.com/16719/prd_1671884-MuscleBlaze-Beginners-Protein-2.2-lb-Chocolate_o.jpg`,
+      name:`MuscleBlaze Beginner's Protein, 2.2 lb, Chocolate`,
+      oriPrice: 499,
+      curPrice: 485,
+      quantity: 1,
+      imgSub1:`https://img4.hkrtcdn.com/14680/prd_1467923-MuscleBlaze-Beginners-Protein-2.2-lb-Chocolate_o.jpg`,
+      imgSub2:`https://img7.hkrtcdn.com/16739/prd_1673896-MuscleBlaze-Beginners-Protein-2.2-lb-Chocolate_o.jpg`,
+      imgSub3:`https://img9.hkrtcdn.com/16739/prd_1673898-MuscleBlaze-Beginners-Protein-2.2-lb-Chocolate_o.jpg`
+      },
+  
+       {imgPrime:`https://img2.hkrtcdn.com/11963/prd_1196281-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_o.jpg`,
+      name:`MuscleTech NitroTech Performance Series, 4 lb, Milk Chocolate`,
+      oriPrice: 6699,
+      curPrice: 5580,
+      quantity: 1,
+      imgSub1:`https://img6.hkrtcdn.com/11963/prd_1196275-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_o.jpg`,
+      imgSub2:`https://img8.hkrtcdn.com/11963/prd_1196277-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_o.jpg`,
+      imgSub3:`https://img4.hkrtcdn.com/15510/prd_1550993-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_o.jpg`
+      },
+  
+       {imgPrime:`https://img1.hkrtcdn.com/16794/prd_1679330_o.jpg`,
+      name:`HealthKart HK Vitals Multivitamin with Multimineral, Amino Acids, Taurine & Ginseng Extract, 60 tablet(s), Unflavoured`,
+      oriPrice: 650,
+      curPrice: 389,
+      quantity: 1,
+      imgSub1:`https://img5.hkrtcdn.com/16794/prd_1679344-HealthKart-HK-Vitals-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_o.jpg`,
+      imgSub2:`https://img1.hkrtcdn.com/16794/prd_1679350-HealthKart-HK-Vitals-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_o.jpg`,
+      imgSub3:`https://img9.hkrtcdn.com/16794/prd_1679348-HealthKart-HK-Vitals-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_o.jpg`
+      },
+  
+      {imgPrime:`https://img8.hkrtcdn.com/11795/prd_1179417-TrueBasics-Ultra-Omega3-Fatty-Acids-Triple-Strength-with-1250mg-Fish-oil-EPA-460-mg-DHA-380-mg-90-capsules_o.jpg`,
+      name:`TrueBasics Ultra Omega-3 (EPA 525mg & DHA 400mg), 90 capsules`,
+      oriPrice: 1699,
+      curPrice: 1478,
+      quantity: 1,
+      imgSub1:`https://img10.hkrtcdn.com/14783/prd_1478299-TrueBasics-Ultra-Omega3-EPA-525mg-DHA-400mg-60-capsules-TrueBasics-Ultra-Omega3-EPA-525mg-DHA-400mg-90-capsules_o.jpg`,
+      imgSub2:`https://img10.hkrtcdn.com/11795/prd_1179419-TrueBasics-Ultra-Omega3-Fatty-Acids-Triple-Strength-with-1250mg-Fish-oil-EPA-460-mg-DHA-380-mg-90-capsules_o.jpg`,
+      imgSub3:`https://img2.hkrtcdn.com/14784/prd_1478301-TrueBasics-Ultra-Omega3-EPA-525mg-DHA-400mg-90-capsules_o.jpg`
+      },
+  
+     {imgPrime:`https://img4.hkrtcdn.com/6865/prd_686463-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_o.jpg`,
+      name:`TrueBasics Multivit Sport One Daily Multivitamin, 90 tablet(s), Unflavoured`,
+      oriPrice: 1699,
+      curPrice: 1478,
+      quantity: 1,
+      imgSub1:`https://img10.hkrtcdn.com/6834/prd_683369-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_o.jpg`,
+      imgSub2:`https://img6.hkrtcdn.com/6834/prd_683375-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_o.jpg`,
+      imgSub3:`https://img4.hkrtcdn.com/6834/prd_683373-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_o.jpg`
+      },
+  
+     {imgPrime:`https://img6.hkrtcdn.com/15299/prd_1529825-MuscleBlaze-Steel-Pro-Shaker-Black-750-ml_o.jpg`,
+      name:`MuscleBlaze Steel Pro Shaker, Black, 750 ml`,
+      oriPrice: 1299,
+      curPrice: 849,
+      quantity: 1,
+      imgSub1:`https://img4.hkrtcdn.com/15299/prd_1529813-MuscleBlaze-Steel-Pro-Shaker-Black-750-ml_o.jpg`,
+      imgSub2:`https://img2.hkrtcdn.com/15299/prd_1529821-MuscleBlaze-Steel-Pro-Shaker-Black-750-ml_o.jpg`,
+      imgSub3:`https://img6.hkrtcdn.com/15299/prd_1529815-MuscleBlaze-Steel-Pro-Shaker-Black-750-ml_o.jpg`
+      },
+  
+      {imgPrime:`https://img4.hkrtcdn.com/12525/prd_1252433-Strauss-Foam-Hand-Grip-Blue_o.jpg`,
+      name:`Strauss Foam Hand Grip, Blue`,
+      oriPrice: 499,
+      curPrice: 249,
+      quantity: 1,
+      imgSub1:`https://img8.hkrtcdn.com/12525/prd_1252427-Strauss-Foam-Hand-Grip-Blue_o.jpg`,
+      imgSub2:`https://img4.hkrtcdn.com/7700/prd_769953-Strauss-Foam-Hand-Grip-Blue_o.jpg`,
+      imgSub3:`https://img6.hkrtcdn.com/12525/prd_1252425-Strauss-Foam-Hand-Grip-Blue_o.jpg`
+      },
+  
+      {imgPrime:`https://img2.hkrtcdn.com/2400/prd_239931_o.jpg`,
+      name:`MuscleBlaze Gloves, Yellow Black & Silver, Small`,
+      oriPrice: 1299,
+      curPrice: 909,
+      quantity: 1,
+      imgSub1:`https://img6.hkrtcdn.com/2400/prd_239915_o.jpg`,
+      imgSub2:`https://img2.hkrtcdn.com/2400/prd_239901_o.jpg`,
+      imgSub3:`https://img2.hkrtcdn.com/2400/prd_239901_o.jpg`
+      }
+  ];
+  
+  function showproducts(d){
+    parent.innerHTML=null;
+     
+  d.forEach(function(product){
+   
+     console.log(product);
+      let div=document.createElement("div");
+      let img=document.createElement("img");
+      img.src=product.imgPrime;
+      let prod_price=document.createElement("p");
+      prod_price.textContent=product.name;
+      
+      let prod_name=document.createElement("p");
+      prod_name.textContent=product.oriPrice;
+      let addtocart_btn=document.createElement("button");
+      addtocart_btn.textContent="ADD TO BAG";
+      div.append(img,prod_name,prod_price,addtocart_btn);
+      parent.append(div);
+      div.style.cursor = "pointer";
+      div.onclick=function (){
+          addtocart(product);
+      }
+  
+  
+  });
+  }
+  showproducts(data);
+   
+  
+  function addtocart(p){
+   
+     localStorage.setItem("product",JSON.stringify(p));
+     window.location.href="productViewPage.html"
+
+    
+  }
+  function lth(){
+    let v=document.getElementById("filter").value;
+   
+   
+    
+    
+    if(v=="high"){
+      let arr=data.sort(function(a,b){
+        return b. oriPrice-a.oriPrice;
+        
+      }
+         
+      )
+      showproducts(arr);
+     
+    }
+    if(v=="low"){
+      let arr=data.sort(function(a,b){
+        return a.oriPrice-b.oriPrice;
+      
+    }
+      )
+      showproducts(arr);
+      
+     
+    
+    
+  }
+  }
+</script>
