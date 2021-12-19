@@ -10,15 +10,15 @@ This is our second Construct Week Project at Masai School's Full Stack Web Devel
 **Team Members          Contribution**
 -
 Monika Kumari         Home Page
--
+
 Akash Pratap Singh    Signup, Login Page and Products Page
--
+
 Premkumar Hulikoppe   Product View Page
--
+
 Piyush Dhudhakawre    Cart Page
--
+
 Atul Kumar            Address Page and Payment Page
--
+
 
   So it was a great experience to us while building this task we have learnt so many new concepts and how to apply tech-tools whatever we have learnt in our current unit. The project covers basic front end designs up to a certain level and showcasing basic functionality like signup, signin, product viewing, adding it to cart then finally placing order by filling address details and making successful payment. I greatly thankful to my instructor *Swanand Kadam* and also instructor associate *Kamal* for guiding us which helpled me to feel confident and work upon the project and to complete within the specified time period.
  
