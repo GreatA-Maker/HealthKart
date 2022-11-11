@@ -5,7 +5,7 @@
 ---
 This is our second Construct Week Project at Masai School's Full Stack Web Development Course. We are currently at the end of third unit where we need to make projects as per mastery based progression environment of Masai School. 
 
-Bewakoof is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparel based on dazzling and upbeat designs that resonate with the millennials. Prabhkiran Singh and Siddharth Munot launched Bewakoof in 2012.
+As India's largest nutrition platform, HealthKart offers a wide range of supplements and nutraceuticals through in-house native brands such as MuscleBlaze, TrueBasics, HKVitals, bGreen, Nouriza and Gritzo. It has 110 offline stores spread across 40 cities.
 
 ##  Tech-stack used
   
